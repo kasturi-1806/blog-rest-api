@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Introduction to REST APIs",
+    "content": "REST APIs allow different applications to communicate using HTTP methods such as GET, POST, PUT and DELETE.",
+    "author": "Kasturi",
+    "category": "Web Development",
+    "createdDate": "2026-09-15"
+  },
+  {
+    "id": 2,
+    "title": "Getting Started with JavaScript",
+    "content": "JavaScript is a programming language commonly used to add interactivity and dynamic behavior to web pages.",
+    "author": "Rahul",
+    "category": "Programming",
+    "createdDate": "2026-09-16"
+  },
+  {
+    "id": 3,
+    "title": "Why Learn Node.js",
+    "content": "Node.js allows developers to use JavaScript on the server and build web applications and APIs.",
+    "author": "Priya",
+    "category": "Technology",
+    "createdDate": "2026-09-17"
+  }
+]

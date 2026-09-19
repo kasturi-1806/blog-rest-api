@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog REST API</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <h1>Blog REST API</h1>
+    <p>A simple interface for demonstrating CRUD operations using a REST API.</p>
+  </header>
+
+  <main class="container">
+
+    <section class="form-section">
+      <h2 id="form-title">Create Blog Post</h2>
+
+      <form id="post-form">
+
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input
+            type="text"
+            id="title"
+            name="title"
+            placeholder="Enter post title"
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="content">Content</label>
+          <textarea
+            id="content"
+            name="content"
+            rows="6"
+            placeholder="Enter post content"
+            required
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="author">Author Name</label>
+          <input
+            type="text"
+            id="author"
+            name="author"
+            placeholder="Enter author name"
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="category">Category</label>
+          <input
+            type="text"
+            id="category"
+            name="category"
+            placeholder="Example: Web Development"
+            required
+          >
+        </div>
+
+        <div class="form-buttons">
+          <button type="submit" id="submit-button">Create Post</button>
+          <button type="button" id="cancel-button" class="cancel-button" hidden>
+            Cancel Edit
+          </button>
+        </div>
+
+      </form>
+
+      <p id="message" class="message"></p>
+    </section>
+
+    <section class="posts-section">
+      <div class="posts-header">
+        <h2>Blog Posts</h2>
+        <button id="refresh-button">Refresh Posts</button>
+      </div>
+
+      <div id="posts-container">
+        <p>Loading posts...</p>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
